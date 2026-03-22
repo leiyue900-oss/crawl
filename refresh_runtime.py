@@ -1,6 +1,7 @@
 import json
 import time
 import re
+import random
 from datetime import datetime, timedelta
 from typing import Any, Dict, Optional
 
@@ -24,7 +25,7 @@ OUTPUT_JSON = "ctrip_runtime_config.json"
 HEADLESS = False
 
 # 等待页面发请求的时间
-LIST_PAGE_WAIT_SECONDS = 60
+LIST_PAGE_WAIT_SECONDS = random.randint(20, 50)
 DETAIL_PAGE_WAIT_SECONDS = 70
 
 
